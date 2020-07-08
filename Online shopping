@@ -1,0 +1,208 @@
+import java.util.*;
+
+class MyProject
+{
+  public static void main(String args[])
+  {
+    Scanner sc= new Scanner (System.in);
+    System.out.println("Welcome to online Boys shopping");
+    System.out.println("\n1.Formals \n2.InFormals \nEnter your choice");
+        int nnm=sc.nextInt();
+        switch (nnm)
+        {
+          case 1 :
+            System.out.println("Welcome to mens formals ");
+            System.out.println("1.pants \n2.suits\n3.shirts");
+            int nm=sc.nextInt();
+            switch (nm)
+            {
+              case 1 :
+                System.out.println("Welcome to mens formal pants ");
+                System.out.println("Quality\n1.top quality\n2.medium quality\n3.less quality\nenter your choice");
+                int mm=sc.nextInt();
+                switch (mm)
+                {
+                  case 1 :
+                    System.out.println("Top Quality \nColour : black \nsize:xl \nCost :3000 ");
+                    Buy_add();
+                    break;
+                  case 2 :
+                    System.out.println("Medium Quality \nColour : blue \nsize:xl \nCost :2000 ");
+                    Buy_add();
+                    break;
+                  case 3 :
+                    System.out.println("Low Quality \nColour : black \nsize:xl \nCost :1000 ");
+                    Buy_add();
+                    break;
+                 }
+                 break;
+                 case 2 :
+                   System.out.println("Welcome to mens formal suits ");
+                System.out.println("Quality\n1.top quality\n2.medium quality\n3.less quality\nenter your choice");
+                int o=sc.nextInt();
+                switch (o)
+                {
+                  case 1 :
+                    System.out.println("Top Quality \nColour : black \nsize:xl \nCost :3000 ");
+                    Buy_add();
+                    break;
+                  case 2 :
+                    System.out.println("Medium Quality \nColour : black \nsize:xl \nCost :2000 ");
+                    Buy_add();
+                    break;
+                  case 3 :
+                    System.out.println("Low Quality \nColour : black \nsize:xl \nCost :1000 ");
+                    Buy_add();
+                    break;
+                 }
+                 break;
+                 case 3 :
+                   System.out.println("Welcome to mens formal shirts ");
+                System.out.println("Quality\n1.top quality\n2.medium quality\n3.less quality\nenter your choice");
+                int mo=sc.nextInt();
+                switch (mo)
+                {
+                  case 1 :
+                    System.out.println("Top Quality \nColour : black \nsize:xl \nCost :3000 ");
+                    Buy_add();
+                    break;
+                  case 2 :
+                    System.out.println("Medium Quality \nColour : black \nsize:xl \nCost :2000 ");
+                    Buy_add();
+                    break;
+                  case 3 :
+                    System.out.println("Low Quality \nColour : black \nsize:xl \nCost :1000 ");
+                    Buy_add();
+                    break;
+                 }
+                 break;  
+            }
+             break ;
+        // informals
+           case 2 :
+            System.out.println("Welcome to mens Informals ");
+            System.out.println("1.pants \n2.T-shirts\n3.shirts");
+            int oo=sc.nextInt();
+            switch (oo)
+            {
+              case 1 :
+                System.out.println("Welcome to mens Informal pants ");
+                System.out.println("Quality\n1.top quality\n2.medium quality\n3.less quality\nenter your choice");
+                int no=sc.nextInt();
+                switch (no)
+                {
+                  case 1 :
+                    System.out.println("Top Quality \nColour : black \nsize:xl \nCost :3000 ");
+                    Buy_add();
+                    break;
+                  case 2 :
+                    System.out.println("Medium Quality \nColour : blue \nsize:xl \nCost :2000 ");
+                    Buy_add();
+                    break;
+                  case 3 :
+                    System.out.println("Low Quality \nColour : black \nsize:xl \nCost :1000 ");
+                    Buy_add();
+                    break;
+                 }
+                 break;
+                 case 2 :
+                   System.out.println("Welcome to mens Informal T-shirts ");
+                System.out.println("Quality\n1.top quality\n2.medium quality\n3.less quality\nenter your choice");
+                int n=sc.nextInt();
+                switch (n)
+                {
+                  case 1 :
+                    System.out.println("Top Quality \nColour : black \nsize:xl \nCost :3000 ");
+                    Buy_add();
+                    break;
+                  case 2 :
+                    System.out.println("Medium Quality \nColour : black \nsize:xl \nCost :2000 ");
+                    Buy_add();
+                    break;
+                  case 3 :
+                    System.out.println("Low Quality \nColour : black \nsize:xl \nCost :1000 ");
+                    Buy_add();
+                    break;
+                 }
+                 break;
+                 case 3 :
+                   System.out.println("Welcome to mens formal shirts ");
+                System.out.println("Quality\n1.top quality\n2.medium quality\n3.less quality\nenter your choice");
+                int h=sc.nextInt();
+                switch (h)
+                {
+                  case 1 :
+                    System.out.println("Top Quality \nColour : black \nsize:xl \nCost :3000 ");
+                    Buy_add();
+                    break;
+                  case 2 :
+                    System.out.println("Medium Quality \nColour : black \nsize:xl \nCost :2000 ");
+                    Buy_add();
+                    break;
+                  case 3 :
+                    System.out.println("Low Quality \nColour : black \nsize:xl \nCost :1000 ");
+                    Buy_add();
+                    break;
+                 }
+                 break;  
+            }
+             break ;
+          
+  
+        }
+        
+        }
+    //creating method
+   public static void Buy()
+   {
+    Scanner sc= new Scanner (System.in);
+    System.out.println("Only Cash On delivery Is Available ");
+    System.out.println("Are you want to continue :\n1.yes \n2.no ");
+    int n=sc.nextInt();
+    switch(n)
+    {
+      case 1 : 
+        System.out.println("Enter your name :");
+        sc.nextLine();
+        String name=sc.nextLine();
+        System.out.println("Enter your address :");
+        String address=sc.nextLine();
+        System.out.println("Enter your phone number :");
+        String phno=sc.nextLine();
+        System.out.println("After one week you will get your product :");
+        System.out.println("In case of any problem \nservice Dask number : 100");
+        System.out.println("Thanks for visiting \n Visit again ");
+        break;
+      case 2 :
+        System.out.println("Thanks for visiting \n Visit again ");
+        break;  
+    }
+   
+   }
+   //method of add to card
+    public static void AddToCard()
+   {
+     System.out.println("Your product is successfully added to the card");
+     System.out.println("Thanks for visiting \n Visit again ");
+   }
+    public static void Buy_add()
+   {
+     Scanner sc= new Scanner (System.in);
+     System.out.println("1.Buy\n2.Add to card \n 3.exit\nEnter your choice ");
+     int no=sc.nextInt();
+     if(no==1)
+     {
+       Buy();
+     }
+     else if(no==2)
+     {
+       AddToCard();
+     }
+     else
+     {
+       System.out.println("Thanks for visiting \n Visit again ");
+     }
+                    
+   
+  }
+}
